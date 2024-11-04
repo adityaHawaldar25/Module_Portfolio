@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #circle{
+            height: 300px;
+            width: 300px;
+            background-color: yellow;
+            border-radius: 50%;
+            margin: 140px auto;
+        }
+        button{
+            background-color: black;
+            color: rgb(255, 243, 240);
+            padding: 13px;
+            margin: 20px 120px;
+            font-size: 23px;
+            font-weight: 600;
+            border-radius: 12px;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+
+    <div id="back">
+    <div id="circle">
+    </div>
+</div>
+    <button>click</button>
+  
+    
+    
+
+    <script>
+var bulb =document.querySelector('#circle')
+var btn = document.querySelector('button')
+
+var no=0
+
+       btn.addEventListener("click",function(){
+        if(no==0){
+            bulb.style.backgroundColor='red';
+            // console.log('hii');
+            no=1;
+        }
+            else{
+                bulb.style.backgroundColor='yellow';
+                no=0
+            }
+
+          
+
+                }
+            )
+
+
+        
+
+
+    
+
+    </script>
+</body>
+</html>
